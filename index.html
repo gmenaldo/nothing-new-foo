@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nothing New, Foo! — The Trilith Guest House Anthem</title>
+<style>
+  body{margin:0;background:#1a120c;color:#f6efe4;font-family:Georgia,serif}
+  main{max-width:40rem;margin:0 auto;padding:2.5rem 1.25rem}
+  h1{font-size:2rem;letter-spacing:.02em;margin:0 0 .25rem}
+  p{line-height:1.5}
+  a{color:#f0b56b}
+  audio{width:100%;margin:1.25rem 0}
+  pre{white-space:pre-wrap;font-family:inherit;background:#2a1d14;padding:1rem 1.1rem;border-radius:12px}
+</style>
+<main>
+  <p>Trilith Guest House</p>
+  <h1>Nothing New, Foo!</h1>
+  <p>Two minutes. Original soul-funk anthem. Press play.</p>
+  <audio controls src="Nothing_New_Foo.mp3"></audio>
+  <p><a href="Nothing_New_Foo.mp3" download>Download the MP3</a></p>
+  <pre id="lyr"></pre>
+</main>
+<script>
+fetch("lyrics.txt").then(r=>r.text()).then(t=>{document.getElementById("lyr").textContent=t})
+</script>
